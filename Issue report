@@ -1,0 +1,18 @@
+When attempting to fetch appointments from the Zoho Bookings API using the endpoint http://localhost:3000/zoho-bookings/fetch-appointments, an error is encountered with the message: "EXECUTION ERROR :: Error setting value for the variable:'data' null". This error suggests that there is a problem with the request parameters or how they are being processed by the API.
+
+Details of the API Request:
+Endpoint URL: http://localhost:3000/zoho-bookings/fetch-appointments
+Query Parameters:
+service_id: 238254000000033060
+staff_id: 238254000000033022
+from_time: 10-Jan-2025 12:00:00 pm
+to_time: 30-Jan-2025 12:30:00 pm
+status: UPCOMING
+need_customer_more_info: true
+customer_name: John
+customer_email: john@zylker.com
+
+
+1. Verified the URL encoding for query parameters.
+2. Ensured all required parameters are included and correctly formatted.
+3. Added logging to capture the request payload for further debugging.

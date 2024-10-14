@@ -1,0 +1,58 @@
+1. Book the appointment 
+
+URL : http://localhost:3000/zoho-bookings/book-appointment?service_id=238254000000033060&staff_id=238254000000033022&resource_id=238254000000033086&from_time=28-Jan-2025%2011:30:00&to_time=28-Jan-2025%2012:00:00&timezone=Asia/Calcutta&customer_details=%7B%22name%22:%20%22John%22,%20%22email%22:%22john@zylker.com%22,%20%22phone_number%22:%229876543201%22%7D&notes=Appointment%20confirmed%20over%20phone%20call&additional_fields=%7B%22Participant2%22:%22Peter%22,%22Email%22:%22peter@email.com%22,%22Description%22:%22I%20am%20a%20guest%20user%22,%22Location%22:%22Adelaide%22,%22Gender%22:%22Male%22,%22DOB%22:%2230-Jul-1997%22,%22Interests%22:[%22Football%22,%22Tennis%22]%7D
+
+2. Get the appointment
+
+URL : http://localhost:3000/zoho-bookings/get-appointment?booking_id=SM-00001
+
+3. Fetch the appointment
+
+URL : http://localhost:3000/zoho-bookings/fetch-appointments?service_id=238254000000033060&staff_id=238254000000033022&from_time=10-Jan-2025%2012:00:00%20pm&to_time=30-Jan-2025%2012:30:00%20pm&status=UPCOMING&need_customer_more_info=true&customer_name=John&customer_email=john%40zylker.com
+
+Response : {"response":{"errormessage":"EXECUTION ERROR :: Error setting value for the variable:'data'\n null","status":"failure"}}
+
+4. Update the appointment
+
+URL : http://localhost:3000/zoho-bookings/update-appointment?booking_id=SM-00001&action=cancel
+
+5. Create a workspace
+
+URL : http://localhost:3000/zoho-bookings/create-workspace?name=Consultations%20-%20New%20York
+
+6. Update a workspace
+
+URL : http://localhost:3000/zoho-bookings/update-workspace?workspaceId=238254000000039002&name=Updated%20Consultation%20Workspace%20Name
+
+7. Fetch the workspaces
+
+URL : http://localhost:3000/zoho-bookings/fetch-workspaces
+
+8. Delete the workspace
+
+URL : http://localhost:3000/zoho-bookings/delete-workspace?workspaceId=238254000000039026&ignorePastAppointment=true
+
+9. Fetch the resources
+
+URL : http://localhost:3000/zoho-bookings/fetch-resources
+
+10. Fetch the staff
+
+URL : http://localhost:3000/zoho-bookings/fetch-staff
+
+11. Fetch the services
+
+URL : http://localhost:3000/zoho-bookings/fetch-services?workspace_id=238254000000033024
+
+12. Add staffs
+
+URL : http://localhost:3000/zoho-bookings/add-staff?name=Test1&email=test1@test.com&gender=Female&role=Admin&dob=12-Aug-1999%2000:00:00&additional_info=Testing&phone=1234567890&designation=Developer&assigned_services=238254000000033060
+
+13. Fetch availablility
+
+URL : http://localhost:3000/zoho-bookings/fetch-availability?service_id=238254000000033060&staff_id=238254000000033022&selected_date=24-Jan-2025%2010:00:00
+
+14. Reschedule the appointment
+
+URL : http://localhost:3000/zoho-bookings/reschedule-appointment?booking_id=SM-00001&staff_id=238254000000033022&start_time=2024-10-28%2013:00:00
+

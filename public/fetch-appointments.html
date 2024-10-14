@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Appointments</title>
+</head>
+<body>
+    <form action="http://localhost:3000/zoho-bookings/fetch-appointments" method="POST">
+        <label for="service_id">Service ID:</label>
+        <input type="text" id="service_id" name="service_id"><br><br>
+
+        <label for="staff_id">Staff ID:</label>
+        <input type="text" id="staff_id" name="staff_id"><br><br>
+
+        <label for="from_time">From Time:</label>
+        <input type="text" id="from_time" name="from_time"><br><br>
+
+        <label for="to_time">To Time:</label>
+        <input type="text" id="to_time" name="to_time"><br><br>
+
+        <label for="status">Status:</label>
+        <input type="text" id="status" name="status"><br><br>
+
+        <label for="need_customer_more_info">Need Customer More Info:</label>
+        <input type="text" id="need_customer_more_info" name="need_customer_more_info"><br><br>
+
+        <label for="customer_name">Customer Name:</label>
+        <input type="text" id="customer_name" name="customer_name"><br><br>
+
+        <label for="customer_email">Customer Email:</label>
+        <input type="text" id="customer_email" name="customer_email"><br><br>
+
+        <button type="submit">Fetch Appointments</button>
+    </form>
+</body>
+</html>
